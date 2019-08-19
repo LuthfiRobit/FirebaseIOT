@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "942892113407",
+    "firebase_url": "https://iot-test-9751b.firebaseio.com",
+    "project_id": "iot-test-9751b",
+    "storage_bucket": "iot-test-9751b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942892113407:android:77604790f2a79304",
+        "android_client_info": {
+          "package_name": "luthfi.unuja.firebaseiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942892113407-8949ilnpbp4k4je6b5fddjh7j2ppkd4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "luthfi.unuja.firebaseiot",
+            "certificate_hash": "a997837c16d05756d117393cae189f9924bee372"
+          }
+        },
+        {
+          "client_id": "942892113407-0ifnt1elstphtltan03g3o9ktshutdan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR31_Ig3avWoNaieCnEnL-8SN0yVHzVdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942892113407-0ifnt1elstphtltan03g3o9ktshutdan.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

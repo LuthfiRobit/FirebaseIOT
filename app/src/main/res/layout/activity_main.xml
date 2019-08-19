@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9d276"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/view_wave"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/white"
+        android:padding="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:id="@+id/waveLoadingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:wlv_borderColor="@color/colorAccent"
+            app:wlv_borderWidth="3dp"
+            app:wlv_progressValue="10"
+            app:wlv_round_rectangle="true"
+            app:wlv_shapeType="circle"
+
+            app:wlv_titleCenterColor="@android:color/white"
+            app:wlv_titleCenterSize="24sp"
+            app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+            app:wlv_titleCenterStrokeWidth="3dp"
+            app:wlv_titleTop="Persentase Air"
+            app:wlv_titleTopColor="@android:color/white"
+
+            app:wlv_titleTopSize="24sp"
+            app:wlv_titleTopStrokeColor="@android:color/holo_blue_dark"
+            app:wlv_titleTopStrokeWidth="3dp"
+            app:wlv_triangle_direction="north"
+
+            app:wlv_waveAmplitude="20"
+            app:wlv_waveColor="#5edfff" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/view_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_wave"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:padding="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/changa_extralight"
+                android:text="Parameter Akhir"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_nilai"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/changa_extralight"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_tampil_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/tex_rounded_button"
+                android:drawableEnd="@drawable/ic_down"
+                android:fontFamily="@font/changa_extralight"
+                android:text="Ganti"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/view_ganti_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_parameter"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:padding="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+
+            <EditText
+                android:id="@+id/et_nilai"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_text_background"
+                android:fontFamily="@font/changa_extralight"
+                android:gravity="center_horizontal"
+                android:hint="Input Nilai 1-100 ... "
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000"
+                android:textColorHint="#393939" />
+
+            <Button
+                android:id="@+id/btn_nilai"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/tex_rounded_button"
+                android:fontFamily="@font/changa_extralight"
+                android:text="Simpan"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute" />
+
+            <Button
+                android:id="@+id/btn_up"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_up"
+                android:background="@drawable/tex_rounded_button"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
